@@ -9,6 +9,10 @@ from __future__ import absolute_import, division, print_function
 from trainer import Trainer
 from options import MonodepthOptions
 
+import os
+os.environ["KMP_DUPLICATE_LIB_OK"]="TRUE"
+
+
 options = MonodepthOptions()
 opts = options.parse()
 
